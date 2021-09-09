@@ -70,7 +70,7 @@ We are making use of js-crawler to crawl the website that lists the URLs to be s
  - Consolidate single report easy-to-read HTML report for all pages -> **In Analysis**
  - Setting up CI server - **TBD**
  - Jenkins pipeline integration - **TBD**
- - Setting up custom script for getting metrics on pages like Login/checkout as these are crwalable links -> **In Progress**
+ - Setting up custom script for getting metrics on pages like Login/checkout as these are not crawlable links -> **In Progress**
 
 
 Please feel free to reach out to me in case of any queries - sachin.joshi@bhnetwork.com
