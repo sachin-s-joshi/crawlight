@@ -1,0 +1,5 @@
+node_modules
+.history
+lhci_reports
+.lighthouseci
+lighthouse.yml

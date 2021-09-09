@@ -1,0 +1,22 @@
+{
+  "name": "lighthouse-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node crawl.js",
+    "posttest": "lhci autorun"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@lhci/cli": "^0.8.0",
+    "@types/crawler": "^1.2.2",
+    "crawler": "^1.3.0",
+    "dotenv": "^10.0.0",
+    "js-crawler": "^0.3.21",
+    "lightcrawler": "0.0.9",
+    "npm": "^7.21.0"
+  }
+}
