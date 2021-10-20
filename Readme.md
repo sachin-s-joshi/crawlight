@@ -1,17 +1,17 @@
 
 # Introduction
 
-Lighthouse tools has been used widely in comapnies to track client side web page performance metrics viz; 
+Lighthouse tools has been used widely in companies to track client side web page performance metrics viz; 
 - SEO
 - Accessibility
 - Performance
 - Best Practices 
 
-We at BHN have been aiming at standardizing the lighthouse tool for tracking performance metrics of crtical sites for every build releases so that we get notified if there are any unforseen issues to track down and resolve.
+I have been aiming at standardizing the lighthouse tool for tracking performance metrics of crtical sites for every build releases so that we get notified if there are any unforseen issues to track down and resolve.
 
-And with this repository, we aim to create our in-house tool using lighthouse-ci so that we can use this opportunity to integrate it with build processes or trigger manually after every release cycles to get the consolidated report for each of the websites we are looking to track. 
+And with this repository, there is an opportunity to integrate it with build processes or trigger manually after every release cycles to get the consolidated report for each of the websites we are looking to track. 
 
-We are making use of js-crawler to crawl the website that lists the URLs to be sent for lighthouse, and then Lighthouse runs the checks for each of these urls before giving us consolidated report
+I am making use of js-crawler to crawl the website that lists the URLs to be sent for lighthouse, and then Lighthouse runs the checks for each of these urls before giving us consolidated report
 
 # Setup
 
@@ -40,7 +40,7 @@ We are making use of js-crawler to crawl the website that lists the URLs to be s
         "throttlingMethod": "devtools"
       },
       "url": [
-        "https://topsmarkets.preprodhawkcommerce.com/"
+        "https://blog.devkida.com/"
       ]
     },
     "upload": {
@@ -73,4 +73,3 @@ We are making use of js-crawler to crawl the website that lists the URLs to be s
  - Setting up custom script for getting metrics on pages like Login/checkout as these are not crawlable links -> **In Progress**
 
 
-Please feel free to reach out to me in case of any queries - sachin.joshi@bhnetwork.com
