@@ -2,15 +2,14 @@
   "ci": {
     "collect": {
       "numberOfRuns": 1,
-      "disableStorageReset": false,
+      "disableStorageReset": true,
       "settings": {
-        "disableStorageReset": false,
+        "disableStorageReset": true,
         "maxWaitForLoad": 60000,
-        "throttlingMethod": "devtools"
+        "throttlingMethod": "devtools",
+        "preset": "desktop"
       },
-      "url": [
-        "https://www.google.com"
-      ]
+      "url": "https://giftcards.harristeeter.com/harris-teeter-egift"
     },
     "upload": {
       "target": "filesystem",
@@ -22,7 +21,7 @@
         "categories:performance": [
           "error",
           {
-            "minScore": 1
+            "minScore": 0.7
           }
         ],
         "categories:accessibility": [
@@ -34,13 +33,13 @@
         "categories:best-practices": [
           "error",
           {
-            "minScore": 1
+            "minScore": 0.7
           }
         ],
         "categories:seo": [
           "error",
           {
-            "minScore": 1
+            "minScore": 0.7
           }
         ]
       }
