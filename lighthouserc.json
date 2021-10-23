@@ -1,65 +1,48 @@
 {
-  "ci": {
-    "collect": {
-      "numberOfRuns": 1,
-      "disableStorageReset": true,
-      "settings": {
-        "disableStorageReset": true,
-        "maxWaitForLoad": 60000,
-        "throttlingMethod": "devtools"
-      },
-      "url": [
-        "https://giftcards.harristeeter.com/",
-        "https://giftcards.harristeeter.com/%7B%7B%20categoryUrl%20%7D%7D",
-        "https://giftcards.harristeeter.com/pages/categories",
-        "https://giftcards.harristeeter.com/category/our-store-cards",
-        "https://giftcards.harristeeter.com/pages/check-my-balance",
-        "https://giftcards.harristeeter.com/category/visa-mastercard-gift-card",
-        "https://giftcards.harristeeter.com/category/mastercard-gift-card",
-        "https://giftcards.harristeeter.com/category/visa-gift-card",
-        "https://giftcards.harristeeter.com/category/egift-cards",
-        "https://giftcards.harristeeter.com/shoppingCart",
-        "https://giftcards.harristeeter.com/category/Prepaid-Phone-Cards",
-        "https://giftcards.harristeeter.com/category/video-games",
-        "https://giftcards.harristeeter.com/harris-teeter-gift-card",
-        "https://giftcards.harristeeter.com/pages/about-us",
-        "https://giftcards.harristeeter.com/pages/contact",
-        "https://giftcards.harristeeter.com/pages/faq",
-        "https://giftcards.harristeeter.com/pages/promotions"
-      ]
-    },
-    "upload": {
-      "target": "filesystem",
-      "outputDir": "./lhci_reports",
-      "reportFilenamePattern": "%%PATHNAME%%-%%DATETIME%%-report.%%EXTENSION%%"
-    },
-    "assert": {
-      "assertions": {
-        "categories:performance": [
-          "error",
-          {
-            "minScore": 1
-          }
-        ],
-        "categories:accessibility": [
-          "error",
-          {
-            "minScore": 1
-          }
-        ],
-        "categories:best-practices": [
-          "error",
-          {
-            "minScore": 1
-          }
-        ],
-        "categories:seo": [
-          "error",
-          {
-            "minScore": 1
-          }
-        ]
-      }
+    "ci": {
+        "collect": {
+            "numberOfRuns": 1,
+            "disableStorageReset": true,
+            "settings": {
+                "disableStorageReset": true,
+                "maxWaitForLoad": 60000,
+                "throttlingMethod": "devtools",
+                "preset": "desktop"
+            },
+            "url": "https://giftcards.harristeeter.com/harris-teeter-egift"
+        },
+        "upload": {
+            "target": "filesystem",
+            "outputDir": "./lhci_reports",
+            "reportFilenamePattern": "%%PATHNAME%%-%%DATETIME%%-report.%%EXTENSION%%"
+        },
+        "assert": {
+            "assertions": {
+                "categories:performance": [
+                    "error",
+                    {
+                        "minScore": 0.7
+                    }
+                ],
+                "categories:accessibility": [
+                    "error",
+                    {
+                        "minScore": 1
+                    }
+                ],
+                "categories:best-practices": [
+                    "error",
+                    {
+                        "minScore": 0.7
+                    }
+                ],
+                "categories:seo": [
+                    "error",
+                    {
+                        "minScore": 0.7
+                    }
+                ]
+            }
+        }
     }
-  }
 }
