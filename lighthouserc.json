@@ -2,14 +2,30 @@
   "ci": {
     "collect": {
       "numberOfRuns": 1,
-      "disableStorageReset": false,
+      "disableStorageReset": true,
       "settings": {
-        "disableStorageReset": false,
+        "disableStorageReset": true,
         "maxWaitForLoad": 60000,
         "throttlingMethod": "devtools"
       },
       "url": [
-        "https://www.google.com"
+        "https://giftcards.harristeeter.com/",
+        "https://giftcards.harristeeter.com/%7B%7B%20categoryUrl%20%7D%7D",
+        "https://giftcards.harristeeter.com/pages/categories",
+        "https://giftcards.harristeeter.com/category/our-store-cards",
+        "https://giftcards.harristeeter.com/pages/check-my-balance",
+        "https://giftcards.harristeeter.com/category/visa-mastercard-gift-card",
+        "https://giftcards.harristeeter.com/category/mastercard-gift-card",
+        "https://giftcards.harristeeter.com/category/visa-gift-card",
+        "https://giftcards.harristeeter.com/category/egift-cards",
+        "https://giftcards.harristeeter.com/shoppingCart",
+        "https://giftcards.harristeeter.com/category/Prepaid-Phone-Cards",
+        "https://giftcards.harristeeter.com/category/video-games",
+        "https://giftcards.harristeeter.com/harris-teeter-gift-card",
+        "https://giftcards.harristeeter.com/pages/about-us",
+        "https://giftcards.harristeeter.com/pages/contact",
+        "https://giftcards.harristeeter.com/pages/faq",
+        "https://giftcards.harristeeter.com/pages/promotions"
       ]
     },
     "upload": {
